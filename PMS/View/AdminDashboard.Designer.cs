@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_viewreports = new System.Windows.Forms.Button();
             this.lbl_username = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_viewmed = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_logout = new System.Windows.Forms.Button();
             this.btn_users = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,21 +49,21 @@
             this.btn_login_close = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_revenue = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_viewreports = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_viewreports);
             this.panel1.Controls.Add(this.lbl_username);
             this.panel1.Controls.Add(this.label7);
@@ -74,6 +76,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 709);
             this.panel1.TabIndex = 39;
+            // 
+            // btn_viewreports
+            // 
+            this.btn_viewreports.BackColor = System.Drawing.Color.Lavender;
+            this.btn_viewreports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewreports.Location = new System.Drawing.Point(0, 436);
+            this.btn_viewreports.Name = "btn_viewreports";
+            this.btn_viewreports.Size = new System.Drawing.Size(256, 60);
+            this.btn_viewreports.TabIndex = 53;
+            this.btn_viewreports.Text = "View Reports";
+            this.btn_viewreports.UseVisualStyleBackColor = false;
+            this.btn_viewreports.Click += new System.EventHandler(this.btn_viewreports_Click);
             // 
             // lbl_username
             // 
@@ -108,6 +122,18 @@
             this.btn_viewmed.Text = "View Medicines";
             this.btn_viewmed.UseVisualStyleBackColor = false;
             this.btn_viewmed.Click += new System.EventHandler(this.btn_viewmed_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_logout
             // 
@@ -274,6 +300,17 @@
             this.lbl_revenue.TabIndex = 10;
             this.lbl_revenue.Text = "l  ";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(62, 63);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 177);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -297,40 +334,17 @@
             this.label6.TabIndex = 51;
             this.label6.Text = "Dashboard";
             // 
-            // btn_viewreports
+            // button1
             // 
-            this.btn_viewreports.BackColor = System.Drawing.Color.Lavender;
-            this.btn_viewreports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_viewreports.Location = new System.Drawing.Point(0, 436);
-            this.btn_viewreports.Name = "btn_viewreports";
-            this.btn_viewreports.Size = new System.Drawing.Size(256, 60);
-            this.btn_viewreports.TabIndex = 53;
-            this.btn_viewreports.Text = "View Reports";
-            this.btn_viewreports.UseVisualStyleBackColor = false;
-            this.btn_viewreports.Click += new System.EventHandler(this.btn_viewreports_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(62, 63);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 177);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.button1.BackColor = System.Drawing.Color.Lavender;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(-10, 502);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(256, 60);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "temp";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminDashboard
             // 
@@ -351,12 +365,12 @@
             this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,5 +400,6 @@
         private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btn_viewreports;
+        private System.Windows.Forms.Button button1;
     }
 }
