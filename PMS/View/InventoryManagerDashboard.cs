@@ -19,24 +19,12 @@ namespace PMS.View
         }
         private StockRepo stockRepo = new StockRepo();
 
-        //private void InventoryManagerDashboard_Load(object sender, EventArgs e)
-        //{
-        //    LoadStockSummary();
-        //}
-
-        //private void btnStockManagement_Click(object sender, EventArgs e)
-        //{
-        //    StockManagement stockManagement = new StockManagement();
-        //    stockManagement.Show();
-        //    this.Hide();
-        //}
-
-        //private void btnStockValidity_Click(object sender, EventArgs e)
-        //{
-        //    StockValidity stockValidity = new StockValidity();
-        //    stockValidity.Show();
-        //    this.Hide();
-        //}
+        private void btnStockValidity_Click(object sender, EventArgs e)
+        {
+            StockValidity stockValidity = new StockValidity();
+            stockValidity.Show();
+            this.Hide();
+        }
         private void LoadStockSummary()
         {
             lblTotalMedicine.Text = stockRepo.GetTotalMedicineCount().ToString();
@@ -44,23 +32,12 @@ namespace PMS.View
             lblOutOfStock.Text = stockRepo.GetOutOfStockCount().ToString();
         }
 
-        private void btnStockManagement_Click_1(object sender, EventArgs e)
+
+        private void btnStockManagement_Click(object sender, EventArgs e)
         {
             StockManagement stockManagement = new StockManagement();
             stockManagement.Show();
             this.Hide();
-        }
-
-        private void btnStockValidity_Click_1(object sender, EventArgs e)
-        {
-            StockValidity stockValidity = new StockValidity();
-            stockValidity.Show();
-            this.Hide();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void InventoryManagerDashboard_Load_1(object sender, EventArgs e)

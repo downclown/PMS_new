@@ -9,7 +9,7 @@ namespace PMS.Models
 {
     public static class DbConfig
     {
-        public static readonly string ConnectionString = @"Data Source = MSI\SQLEXPRESS;Initial Catalog = Pms_project; Integrated Security = True; ";
+        public static readonly string ConnectionString = @"Data Source=DESKTOP-RVUR34L\SQLEXPRESS;Initial Catalog=PharmacyDb;Integrated Security=True";
         
     }
 }

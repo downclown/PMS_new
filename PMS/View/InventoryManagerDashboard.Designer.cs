@@ -49,9 +49,8 @@
             this.panel1.Controls.Add(this.btnStockValidity);
             this.panel1.Controls.Add(this.btnStockManagement);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 713);
+            this.panel1.Size = new System.Drawing.Size(163, 464);
             this.panel1.TabIndex = 8;
             // 
             // btnStockValidity
@@ -62,14 +61,13 @@
             this.btnStockValidity.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStockValidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockValidity.ForeColor = System.Drawing.Color.Cyan;
-            this.btnStockValidity.Location = new System.Drawing.Point(4, 375);
-            this.btnStockValidity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStockValidity.Location = new System.Drawing.Point(3, 244);
             this.btnStockValidity.Name = "btnStockValidity";
-            this.btnStockValidity.Size = new System.Drawing.Size(232, 80);
+            this.btnStockValidity.Size = new System.Drawing.Size(155, 52);
             this.btnStockValidity.TabIndex = 2;
             this.btnStockValidity.Text = "Stock Validity";
             this.btnStockValidity.UseVisualStyleBackColor = false;
-            this.btnStockValidity.Click += new System.EventHandler(this.btnStockValidity_Click_1);
+            this.btnStockValidity.Click += new System.EventHandler(this.btnStockValidity_Click);
             // 
             // btnStockManagement
             // 
@@ -79,23 +77,21 @@
             this.btnStockManagement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStockManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockManagement.ForeColor = System.Drawing.Color.Cyan;
-            this.btnStockManagement.Location = new System.Drawing.Point(4, 242);
-            this.btnStockManagement.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStockManagement.Location = new System.Drawing.Point(3, 157);
             this.btnStockManagement.Name = "btnStockManagement";
-            this.btnStockManagement.Size = new System.Drawing.Size(232, 80);
+            this.btnStockManagement.Size = new System.Drawing.Size(155, 52);
             this.btnStockManagement.TabIndex = 1;
             this.btnStockManagement.Text = "Stock Management";
             this.btnStockManagement.UseVisualStyleBackColor = false;
-            this.btnStockManagement.Click += new System.EventHandler(this.btnStockManagement_Click_1);
+            this.btnStockManagement.Click += new System.EventHandler(this.btnStockManagement_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 212);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(29, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 29);
+            this.label3.Size = new System.Drawing.Size(103, 19);
             this.label3.TabIndex = 6;
             this.label3.Text = "Out of Stock";
             // 
@@ -103,10 +99,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 134);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(29, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 29);
+            this.label2.Size = new System.Drawing.Size(90, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Low Stock";
             // 
@@ -114,10 +109,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(29, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 29);
+            this.label1.Size = new System.Drawing.Size(212, 19);
             this.label1.TabIndex = 4;
             this.label1.Text = "Total Medicine in Inventory";
             // 
@@ -125,10 +119,9 @@
             // 
             this.lblOutOfStock.AutoSize = true;
             this.lblOutOfStock.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutOfStock.Location = new System.Drawing.Point(387, 212);
-            this.lblOutOfStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOutOfStock.Location = new System.Drawing.Point(258, 138);
             this.lblOutOfStock.Name = "lblOutOfStock";
-            this.lblOutOfStock.Size = new System.Drawing.Size(26, 29);
+            this.lblOutOfStock.Size = new System.Drawing.Size(18, 19);
             this.lblOutOfStock.TabIndex = 3;
             this.lblOutOfStock.Text = "0";
             // 
@@ -136,10 +129,9 @@
             // 
             this.lblLowStock.AutoSize = true;
             this.lblLowStock.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLowStock.Location = new System.Drawing.Point(387, 134);
-            this.lblLowStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLowStock.Location = new System.Drawing.Point(258, 87);
             this.lblLowStock.Name = "lblLowStock";
-            this.lblLowStock.Size = new System.Drawing.Size(26, 29);
+            this.lblLowStock.Size = new System.Drawing.Size(18, 19);
             this.lblLowStock.TabIndex = 2;
             this.lblLowStock.Text = "0";
             // 
@@ -147,10 +139,9 @@
             // 
             this.lblTotalMedicine.AutoSize = true;
             this.lblTotalMedicine.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMedicine.Location = new System.Drawing.Point(387, 52);
-            this.lblTotalMedicine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalMedicine.Location = new System.Drawing.Point(258, 34);
             this.lblTotalMedicine.Name = "lblTotalMedicine";
-            this.lblTotalMedicine.Size = new System.Drawing.Size(26, 29);
+            this.lblTotalMedicine.Size = new System.Drawing.Size(18, 19);
             this.lblTotalMedicine.TabIndex = 1;
             this.lblTotalMedicine.Text = "0";
             // 
@@ -163,21 +154,20 @@
             this.panel2.Controls.Add(this.lblOutOfStock);
             this.panel2.Controls.Add(this.lblLowStock);
             this.panel2.Controls.Add(this.lblTotalMedicine);
-            this.panel2.Location = new System.Drawing.Point(416, 196);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(277, 127);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(484, 309);
+            this.panel2.Size = new System.Drawing.Size(323, 201);
             this.panel2.TabIndex = 9;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // InventoryManagerDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 709);
+            this.ClientSize = new System.Drawing.Size(712, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InventoryManagerDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InventoryManagerDashboard";

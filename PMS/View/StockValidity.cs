@@ -19,41 +19,9 @@ namespace PMS.View
         }
 
         private StockRepo stockRepo = new StockRepo();
-        //private void StockValidity_Load(object sender, EventArgs e)
-        //{
-        //    cmbStockFilter.SelectedIndex = 0;
-        //}
 
-        //private void cmbStockFilter_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    if (cmbStockFilter.SelectedItem.ToString() == "All Stock")
-        //    {
-        //        dgvStock.DataSource = stockRepo.GetAllStockView();
-        //    }
-        //    else if (cmbStockFilter.SelectedItem.ToString() == "Low Stock")
-        //    {
-        //        dgvStock.DataSource = stockRepo.GetLowStockView();
-        //    }
-        //    else if (cmbStockFilter.SelectedItem.ToString() == "Out of Stock")
-        //    {
-        //        dgvStock.DataSource = stockRepo.GetOutOfStockView();
-        //    }
-        //}
-        //private void btnBack_Click(object sender, EventArgs e)
-        //{
-        //    InventoryManagerDashboard dashboard = new InventoryManagerDashboard();
-        //    dashboard.Show();
-        //    this.Close();
-        //}
-
-        private void StockValidity_Load_1(object sender, EventArgs e)
+        private void cmbStockFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbStockFilter.SelectedIndex = 0;
-        }
-
-        private void cmbStockFilter_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
             if (cmbStockFilter.SelectedItem.ToString() == "All Stock")
             {
                 dgvStock.DataSource = stockRepo.GetAllStockView();
@@ -67,16 +35,16 @@ namespace PMS.View
                 dgvStock.DataSource = stockRepo.GetOutOfStockView();
             }
         }
-
-        private void btnBack_Click_1(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             InventoryManagerDashboard dashboard = new InventoryManagerDashboard();
             dashboard.Show();
             this.Close();
         }
 
-        private void dgvStock_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void StockValidity_Load_1(object sender, EventArgs e)
         {
+            cmbStockFilter.SelectedIndex = 0;
 
         }
     }

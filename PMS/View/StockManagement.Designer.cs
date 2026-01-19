@@ -53,12 +53,14 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Location = new System.Drawing.Point(8, 8);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 27);
+            this.btnBack.Size = new System.Drawing.Size(50, 28);
             this.btnBack.TabIndex = 27;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnClear
             // 
@@ -67,13 +69,14 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(641, 318);
+            this.btnClear.Location = new System.Drawing.Point(427, 207);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(93, 35);
+            this.btnClear.Size = new System.Drawing.Size(62, 23);
             this.btnClear.TabIndex = 26;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete
             // 
@@ -82,13 +85,14 @@
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(938, 318);
+            this.btnDelete.Location = new System.Drawing.Point(625, 207);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(93, 35);
+            this.btnDelete.Size = new System.Drawing.Size(62, 23);
             this.btnDelete.TabIndex = 25;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -97,13 +101,14 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(839, 318);
+            this.btnUpdate.Location = new System.Drawing.Point(559, 207);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(93, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(62, 23);
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnInsert
             // 
@@ -112,52 +117,57 @@
             this.btnInsert.FlatAppearance.BorderSize = 0;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(740, 318);
+            this.btnInsert.Location = new System.Drawing.Point(493, 207);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(93, 35);
+            this.btnInsert.Size = new System.Drawing.Size(62, 23);
             this.btnInsert.TabIndex = 23;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click_1);
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // txtReorderLevel
             // 
-            this.txtReorderLevel.Location = new System.Drawing.Point(490, 230);
+            this.txtReorderLevel.Location = new System.Drawing.Point(327, 150);
+            this.txtReorderLevel.Margin = new System.Windows.Forms.Padding(2);
             this.txtReorderLevel.Name = "txtReorderLevel";
-            this.txtReorderLevel.Size = new System.Drawing.Size(197, 26);
+            this.txtReorderLevel.Size = new System.Drawing.Size(133, 20);
             this.txtReorderLevel.TabIndex = 22;
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(490, 193);
+            this.txtQuantity.Location = new System.Drawing.Point(327, 125);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(197, 26);
+            this.txtQuantity.Size = new System.Drawing.Size(133, 20);
             this.txtQuantity.TabIndex = 21;
             // 
             // txtMedicineId
             // 
-            this.txtMedicineId.Location = new System.Drawing.Point(490, 157);
+            this.txtMedicineId.Location = new System.Drawing.Point(327, 102);
+            this.txtMedicineId.Margin = new System.Windows.Forms.Padding(2);
             this.txtMedicineId.Name = "txtMedicineId";
             this.txtMedicineId.ReadOnly = true;
-            this.txtMedicineId.Size = new System.Drawing.Size(197, 26);
+            this.txtMedicineId.Size = new System.Drawing.Size(133, 20);
             this.txtMedicineId.TabIndex = 20;
-            this.txtMedicineId.TextChanged += new System.EventHandler(this.txtMedicineId_TextChanged);
             // 
             // txtStockId
             // 
-            this.txtStockId.Location = new System.Drawing.Point(490, 121);
+            this.txtStockId.Location = new System.Drawing.Point(327, 79);
+            this.txtStockId.Margin = new System.Windows.Forms.Padding(2);
             this.txtStockId.Name = "txtStockId";
             this.txtStockId.ReadOnly = true;
-            this.txtStockId.Size = new System.Drawing.Size(197, 26);
+            this.txtStockId.Size = new System.Drawing.Size(133, 20);
             this.txtStockId.TabIndex = 19;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(296, 230);
+            this.label4.Location = new System.Drawing.Point(197, 150);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 29);
+            this.label4.Size = new System.Drawing.Size(121, 20);
             this.label4.TabIndex = 18;
             this.label4.Text = "Reorder Level";
             // 
@@ -165,9 +175,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(296, 193);
+            this.label3.Location = new System.Drawing.Point(197, 125);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 29);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 17;
             this.label3.Text = "Quantity";
             // 
@@ -175,9 +186,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(296, 157);
+            this.label2.Location = new System.Drawing.Point(197, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 29);
+            this.label2.Size = new System.Drawing.Size(104, 20);
             this.label2.TabIndex = 16;
             this.label2.Text = "Medicine ID";
             // 
@@ -185,9 +197,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(296, 121);
+            this.label1.Location = new System.Drawing.Point(197, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 29);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 15;
             this.label1.Text = "Stock ID";
             // 
@@ -196,21 +209,22 @@
             this.dgvStock.AllowUserToAddRows = false;
             this.dgvStock.AllowUserToDeleteRows = false;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStock.Location = new System.Drawing.Point(28, 380);
+            this.dgvStock.Location = new System.Drawing.Point(19, 247);
+            this.dgvStock.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStock.MultiSelect = false;
             this.dgvStock.Name = "dgvStock";
             this.dgvStock.ReadOnly = true;
             this.dgvStock.RowHeadersWidth = 62;
             this.dgvStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStock.Size = new System.Drawing.Size(1005, 265);
+            this.dgvStock.Size = new System.Drawing.Size(670, 172);
             this.dgvStock.TabIndex = 14;
-            this.dgvStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStock_CellContentClick);
+            this.dgvStock.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStock_CellClick);
             // 
             // StockManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 709);
+            this.ClientSize = new System.Drawing.Size(712, 461);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
@@ -225,7 +239,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvStock);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StockManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockManagement";

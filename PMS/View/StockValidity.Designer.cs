@@ -40,28 +40,25 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBack.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(13, 14);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBack.Location = new System.Drawing.Point(9, 9);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(112, 35);
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 6;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // dgvStock
             // 
             this.dgvStock.AllowUserToAddRows = false;
             this.dgvStock.AllowUserToDeleteRows = false;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStock.Location = new System.Drawing.Point(79, 257);
-            this.dgvStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvStock.Location = new System.Drawing.Point(53, 167);
             this.dgvStock.Name = "dgvStock";
             this.dgvStock.ReadOnly = true;
             this.dgvStock.RowHeadersWidth = 62;
-            this.dgvStock.Size = new System.Drawing.Size(901, 371);
+            this.dgvStock.Size = new System.Drawing.Size(601, 241);
             this.dgvStock.TabIndex = 5;
-            this.dgvStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStock_CellContentClick);
             // 
             // cmbStockFilter
             // 
@@ -71,22 +68,22 @@
             "All Stock",
             "Low Stock",
             "Out of Stock"});
-            this.cmbStockFilter.Location = new System.Drawing.Point(318, 124);
-            this.cmbStockFilter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbStockFilter.Location = new System.Drawing.Point(212, 81);
             this.cmbStockFilter.Name = "cmbStockFilter";
-            this.cmbStockFilter.Size = new System.Drawing.Size(356, 28);
+            this.cmbStockFilter.Size = new System.Drawing.Size(239, 21);
             this.cmbStockFilter.TabIndex = 4;
-            this.cmbStockFilter.SelectedIndexChanged += new System.EventHandler(this.cmbStockFilter_SelectedIndexChanged_1);
+            this.cmbStockFilter.SelectedIndexChanged += new System.EventHandler(this.cmbStockFilter_SelectedIndexChanged);
             // 
             // StockValidity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 709);
+            this.ClientSize = new System.Drawing.Size(712, 461);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvStock);
             this.Controls.Add(this.cmbStockFilter);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StockValidity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockValidity";
